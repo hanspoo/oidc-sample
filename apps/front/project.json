@@ -1,0 +1,28 @@
+{
+  "name": "front",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/front/src",
+  "projectType": "application",
+  "tags": [],
+  "targets": {
+    "serve": {
+      "executor": "@nx/vite:dev-server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "front:build",
+        "proxyConfig": "apps/front/proxy.conf.json"
+      },
+      "configurations": {
+        "development": {
+          "proxyConfig": "proxy.conf.json",
+          "buildTarget": "front:build:development",
+          "hmr": true
+        },
+        "production": {
+          "buildTarget": "front:build:production",
+          "hmr": false
+        }
+      }
+    }
+  }
+}
