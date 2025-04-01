@@ -1,8 +1,15 @@
 {
   "name": "vite-oidc",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
+  "description": "react oidc starter",
+  "author": {
+    "email": "hans@welinux.cl",
+    "name": "Hans Poo",
+    "url": "https://github.com/hanspoo"
+  },
+  "license": "MIT",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
