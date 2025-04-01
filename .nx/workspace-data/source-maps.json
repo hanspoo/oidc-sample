@@ -1,0 +1,122 @@
+{
+  "apps/front": {
+    "root": [
+      "apps/front/project.json",
+      "nx/core/project-json"
+    ],
+    "name": [
+      "apps/front/project.json",
+      "nx/core/project-json"
+    ],
+    "$schema": [
+      "apps/front/project.json",
+      "nx/core/project-json"
+    ],
+    "sourceRoot": [
+      "apps/front/project.json",
+      "nx/core/project-json"
+    ],
+    "projectType": [
+      "apps/front/project.json",
+      "nx/core/project-json"
+    ],
+    "tags": [
+      "apps/front/project.json",
+      "nx/core/project-json"
+    ],
+    "targets": [
+      "apps/front/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve": [
+      "apps/front/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.executor": [
+      "apps/front/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.defaultConfiguration": [
+      "apps/front/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.options": [
+      "apps/front/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations": [
+      "apps/front/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.options.buildTarget": [
+      "apps/front/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.options.proxyConfig": [
+      "apps/front/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.development": [
+      "apps/front/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.development.proxyConfig": [
+      "apps/front/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.development.buildTarget": [
+      "apps/front/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.development.hmr": [
+      "apps/front/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.production": [
+      "apps/front/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.production.buildTarget": [
+      "apps/front/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.production.hmr": [
+      "apps/front/project.json",
+      "nx/core/project-json"
+    ]
+  },
+  "libs/components": {
+    "root": [
+      "libs/components/project.json",
+      "nx/core/project-json"
+    ],
+    "name": [
+      "libs/components/project.json",
+      "nx/core/project-json"
+    ],
+    "$schema": [
+      "libs/components/project.json",
+      "nx/core/project-json"
+    ],
+    "sourceRoot": [
+      "libs/components/project.json",
+      "nx/core/project-json"
+    ],
+    "projectType": [
+      "libs/components/project.json",
+      "nx/core/project-json"
+    ],
+    "// targets": [
+      "libs/components/project.json",
+      "nx/core/project-json"
+    ],
+    "tags": [
+      "libs/components/project.json",
+      "nx/core/project-json"
+    ],
+    "targets": [
+      "libs/components/project.json",
+      "nx/core/project-json"
+    ]
+  }
+}

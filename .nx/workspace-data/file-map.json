@@ -1,0 +1,724 @@
+{
+  "version": "6.0",
+  "nxVersion": "20.3.0",
+  "pathMappings": {
+    "@komplaints/components": [
+      "libs/components/src/index.ts"
+    ]
+  },
+  "nxJsonPlugins": [
+    {
+      "name": "@nx/vite/plugin",
+      "options": {
+        "buildTargetName": "build",
+        "testTargetName": "test",
+        "serveTargetName": "serve",
+        "previewTargetName": "preview",
+        "serveStaticTargetName": "serve-static",
+        "typecheckTargetName": "typecheck"
+      }
+    },
+    {
+      "name": "@nx/eslint/plugin",
+      "options": {
+        "targetName": "lint"
+      }
+    },
+    {
+      "name": "@nx/playwright/plugin",
+      "options": {
+        "targetName": "e2e"
+      }
+    },
+    {
+      "name": "@nx/jest/plugin",
+      "options": {
+        "targetName": "test"
+      }
+    },
+    {
+      "name": "@nx/webpack/plugin",
+      "options": {
+        "buildTargetName": "build",
+        "serveTargetName": "serve",
+        "previewTargetName": "preview"
+      }
+    },
+    {
+      "name": "@nx/storybook/plugin",
+      "options": {
+        "serveStorybookTargetName": "storybook",
+        "buildStorybookTargetName": "build-storybook",
+        "testStorybookTargetName": "test-storybook",
+        "staticStorybookTargetName": "static-storybook"
+      }
+    }
+  ],
+  "fileMap": {
+    "nonProjectFiles": [
+      {
+        "file": ".editorconfig",
+        "hash": "5443105041930014821"
+      },
+      {
+        "file": ".eslintignore",
+        "hash": "7663861978715868291"
+      },
+      {
+        "file": ".eslintrc.json",
+        "hash": "18315524891129148814"
+      },
+      {
+        "file": ".github/workflows/ci.yml",
+        "hash": "14727427998618680472"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "12443014615595530131"
+      },
+      {
+        "file": ".prettierignore",
+        "hash": "14688272390704683536"
+      },
+      {
+        "file": ".prettierrc",
+        "hash": "16267754514737964994"
+      },
+      {
+        "file": ".vscode/extensions.json",
+        "hash": "4422400126597322578"
+      },
+      {
+        "file": "Dockerfile",
+        "hash": "335997851695948381"
+      },
+      {
+        "file": "README.md",
+        "hash": "3022117599461590974"
+      },
+      {
+        "file": "a.json",
+        "hash": "11967253310387377560"
+      },
+      {
+        "file": "docker-compose.yml",
+        "hash": "11429548176468965320"
+      },
+      {
+        "file": "docker-dev/docker-compose.yml",
+        "hash": "17862647211375060947"
+      },
+      {
+        "file": "docker-dev/realms/realm-import.json",
+        "hash": "6090454800491385231"
+      },
+      {
+        "file": "eslint.config.js",
+        "hash": "2478217381773231556"
+      },
+      {
+        "file": "jest.config.ts",
+        "hash": "3494843969422251966"
+      },
+      {
+        "file": "jest.preset.js",
+        "hash": "9430166341120122740"
+      },
+      {
+        "file": "migrations.json",
+        "hash": "8537842155769965264"
+      },
+      {
+        "file": "nx.json",
+        "hash": "17004341993479456227"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "7257928309636193170"
+      },
+      {
+        "file": "package.json",
+        "hash": "11415767619889970738"
+      },
+      {
+        "file": "proxy.conf.json",
+        "hash": "7740023976500524898"
+      },
+      {
+        "file": "tsconfig.base.json",
+        "hash": "13947929944199803505"
+      },
+      {
+        "file": "types/environment.d.ts",
+        "hash": "7874684528551558463"
+      },
+      {
+        "file": "vitest.workspace.ts",
+        "hash": "7870362608836821141"
+      }
+    ],
+    "projectFileMap": {
+      "front": [
+        {
+          "file": "apps/front/.eslintrc.json",
+          "hash": "11012487992710232822"
+        },
+        {
+          "file": "apps/front/README.md",
+          "hash": "5042786034923596981"
+        },
+        {
+          "file": "apps/front/eslint.config.js",
+          "hash": "18206053935892145363",
+          "deps": [
+            "npm:@nx/eslint-plugin"
+          ]
+        },
+        {
+          "file": "apps/front/index.html",
+          "hash": "12589496132718051647"
+        },
+        {
+          "file": "apps/front/jest.config.ts",
+          "hash": "13084834060282166596"
+        },
+        {
+          "file": "apps/front/postcss.config.js",
+          "hash": "2759402739052110475"
+        },
+        {
+          "file": "apps/front/project.json",
+          "hash": "14725159240968879374"
+        },
+        {
+          "file": "apps/front/proxy.conf.json",
+          "hash": "11281046345527164812"
+        },
+        {
+          "file": "apps/front/public/Energía_Agua_Básica_(Escarlata_y_Púrpura_TCG).png",
+          "hash": "369871057310478095"
+        },
+        {
+          "file": "apps/front/public/Energía_Oscura_Básica_(Escarlata_y_Púrpura_TCG).png",
+          "hash": "14039148925580630000"
+        },
+        {
+          "file": "apps/front/public/_headers",
+          "hash": "4396054268183923412"
+        },
+        {
+          "file": "apps/front/public/android-icon-144x144.png",
+          "hash": "9504322288185847386"
+        },
+        {
+          "file": "apps/front/public/android-icon-192x192.png",
+          "hash": "6294872233405399144"
+        },
+        {
+          "file": "apps/front/public/android-icon-36x36.png",
+          "hash": "7730449095140976181"
+        },
+        {
+          "file": "apps/front/public/android-icon-48x48.png",
+          "hash": "15925526439849059035"
+        },
+        {
+          "file": "apps/front/public/android-icon-72x72.png",
+          "hash": "12471339739328064083"
+        },
+        {
+          "file": "apps/front/public/android-icon-96x96.png",
+          "hash": "9418415790483222713"
+        },
+        {
+          "file": "apps/front/public/apple-icon-114x114.png",
+          "hash": "7402422922898671001"
+        },
+        {
+          "file": "apps/front/public/apple-icon-120x120.png",
+          "hash": "7440216516923231669"
+        },
+        {
+          "file": "apps/front/public/apple-icon-144x144.png",
+          "hash": "9504322288185847386"
+        },
+        {
+          "file": "apps/front/public/apple-icon-152x152.png",
+          "hash": "11799137385838675552"
+        },
+        {
+          "file": "apps/front/public/apple-icon-180x180.png",
+          "hash": "16307727891105977274"
+        },
+        {
+          "file": "apps/front/public/apple-icon-57x57.png",
+          "hash": "18385624844198181554"
+        },
+        {
+          "file": "apps/front/public/apple-icon-60x60.png",
+          "hash": "11205973721619713045"
+        },
+        {
+          "file": "apps/front/public/apple-icon-72x72.png",
+          "hash": "12471339739328064083"
+        },
+        {
+          "file": "apps/front/public/apple-icon-76x76.png",
+          "hash": "16923602373456896541"
+        },
+        {
+          "file": "apps/front/public/apple-icon-precomposed.png",
+          "hash": "3100232733419421160"
+        },
+        {
+          "file": "apps/front/public/apple-icon.png",
+          "hash": "3100232733419421160"
+        },
+        {
+          "file": "apps/front/public/browserconfig.xml",
+          "hash": "17211474134373637348"
+        },
+        {
+          "file": "apps/front/public/carina.webp",
+          "hash": "17585369279470635379"
+        },
+        {
+          "file": "apps/front/public/favicon-16x16.png",
+          "hash": "10317117681132322508"
+        },
+        {
+          "file": "apps/front/public/favicon-32x32.png",
+          "hash": "11730412569522456800"
+        },
+        {
+          "file": "apps/front/public/favicon-96x96.png",
+          "hash": "9418415790483222713"
+        },
+        {
+          "file": "apps/front/public/favicon.ico",
+          "hash": "6792587126196708741"
+        },
+        {
+          "file": "apps/front/public/fondo.png",
+          "hash": "1751244521554432430"
+        },
+        {
+          "file": "apps/front/public/icons/272697_excel_excel.svg",
+          "hash": "13399565091363342172"
+        },
+        {
+          "file": "apps/front/public/icons/272698_image_image.svg",
+          "hash": "3466887976999261613"
+        },
+        {
+          "file": "apps/front/public/icons/272699_pdf_pdf.svg",
+          "hash": "15223776398809120700"
+        },
+        {
+          "file": "apps/front/public/icons/272700_powerpoint_powerpoint.svg",
+          "hash": "5158916207922245978"
+        },
+        {
+          "file": "apps/front/public/icons/272701_text_text.svg",
+          "hash": "1647947440346677412"
+        },
+        {
+          "file": "apps/front/public/icons/272702_word_word.svg",
+          "hash": "12651526381538798771"
+        },
+        {
+          "file": "apps/front/public/icons/272703_excel_excel.svg",
+          "hash": "3467711307471852921"
+        },
+        {
+          "file": "apps/front/public/icons/272704_image_image.svg",
+          "hash": "6883099300431090555"
+        },
+        {
+          "file": "apps/front/public/icons/272705_pdf_pdf.svg",
+          "hash": "7858902447542756716"
+        },
+        {
+          "file": "apps/front/public/icons/272706_powerpoint_powerpoint.svg",
+          "hash": "7479226881450192829"
+        },
+        {
+          "file": "apps/front/public/icons/272707_text_text.svg",
+          "hash": "14695068401625706280"
+        },
+        {
+          "file": "apps/front/public/icons/272708_word_word.svg",
+          "hash": "11111387918363436382"
+        },
+        {
+          "file": "apps/front/public/icons/272709_excel_excel.svg",
+          "hash": "18189537321581201303"
+        },
+        {
+          "file": "apps/front/public/icons/272710_image_image.svg",
+          "hash": "4756893836668905253"
+        },
+        {
+          "file": "apps/front/public/icons/272711_pdf_pdf.svg",
+          "hash": "12053525942796268194"
+        },
+        {
+          "file": "apps/front/public/icons/272712_powerpoint_powerpoint.svg",
+          "hash": "17834848643034548584"
+        },
+        {
+          "file": "apps/front/public/icons/272713_text_text.svg",
+          "hash": "4298608666920875264"
+        },
+        {
+          "file": "apps/front/public/icons/272714_word_word.svg",
+          "hash": "16745028294358062421"
+        },
+        {
+          "file": "apps/front/public/komplaints.png",
+          "hash": "6463293400423591127"
+        },
+        {
+          "file": "apps/front/public/komplaints.svg",
+          "hash": "5899129779049353855"
+        },
+        {
+          "file": "apps/front/public/manifest.json",
+          "hash": "8730547106616431246"
+        },
+        {
+          "file": "apps/front/public/ms-icon-144x144.png",
+          "hash": "9504322288185847386"
+        },
+        {
+          "file": "apps/front/public/ms-icon-150x150.png",
+          "hash": "15820798596767444206"
+        },
+        {
+          "file": "apps/front/public/ms-icon-310x310.png",
+          "hash": "294993975123894946"
+        },
+        {
+          "file": "apps/front/public/ms-icon-70x70.png",
+          "hash": "5895725284370462781"
+        },
+        {
+          "file": "apps/front/public/planet.png",
+          "hash": "2808610776885901536"
+        },
+        {
+          "file": "apps/front/public/planet.svg",
+          "hash": "17588356691676117720"
+        },
+        {
+          "file": "apps/front/public/rect957.png",
+          "hash": "11242412496149063433"
+        },
+        {
+          "file": "apps/front/public/robots.txt",
+          "hash": "3790920107759343476"
+        },
+        {
+          "file": "apps/front/public/wtsp.png",
+          "hash": "5256164691222635176"
+        },
+        {
+          "file": "apps/front/src/App.tsx",
+          "hash": "2897234993526240373",
+          "deps": [
+            "components"
+          ]
+        },
+        {
+          "file": "apps/front/src/app/app.tsx",
+          "hash": "1858246781331927097"
+        },
+        {
+          "file": "apps/front/src/app/nx-welcome.tsx",
+          "hash": "3776425450136587980"
+        },
+        {
+          "file": "apps/front/src/assets/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/front/src/main.tsx",
+          "hash": "650994301618437406",
+          "deps": [
+            "npm:react-dom"
+          ]
+        },
+        {
+          "file": "apps/front/src/styles.css",
+          "hash": "9540575453073076294"
+        },
+        {
+          "file": "apps/front/tailwind.config.js",
+          "hash": "12200824329341739845",
+          "deps": [
+            "npm:@nx/react",
+            "npm:daisyui"
+          ]
+        },
+        {
+          "file": "apps/front/tsconfig.app.json",
+          "hash": "8736874325703519814"
+        },
+        {
+          "file": "apps/front/tsconfig.json",
+          "hash": "824604371006306276"
+        },
+        {
+          "file": "apps/front/tsconfig.spec.json",
+          "hash": "17800092001205625112"
+        },
+        {
+          "file": "apps/front/vite.config.ts",
+          "hash": "9258221243317247474",
+          "deps": [
+            "npm:vite-plugin-unused-code",
+            "npm:vite-plugin-deadfile",
+            "npm:vite",
+            "npm:@vitejs/plugin-react",
+            "npm:@nx/vite"
+          ]
+        }
+      ],
+      "components": [
+        {
+          "file": "libs/components/.babelrc",
+          "hash": "2946678488919325452"
+        },
+        {
+          "file": "libs/components/.eslintrc.json",
+          "hash": "14556524733145915277"
+        },
+        {
+          "file": "libs/components/.storybook/denuncia1.ts",
+          "hash": "14927470280448626854"
+        },
+        {
+          "file": "libs/components/.storybook/main.ts",
+          "hash": "3741182863017476156",
+          "deps": [
+            "npm:@storybook/react-vite",
+            "npm:@nx/vite",
+            "npm:vite",
+            "npm:@vitejs/plugin-react"
+          ]
+        },
+        {
+          "file": "libs/components/.storybook/preview.tsx",
+          "hash": "11300394538354783540",
+          "deps": [
+            "npm:react",
+            "npm:@storybook/react",
+            "npm:react-router-dom"
+          ]
+        },
+        {
+          "file": "libs/components/README.md",
+          "hash": "17764656877035248431"
+        },
+        {
+          "file": "libs/components/eslint.config.js",
+          "hash": "18206053935892145363",
+          "deps": [
+            "npm:@nx/eslint-plugin"
+          ]
+        },
+        {
+          "file": "libs/components/jest.config.ts",
+          "hash": "7685655210775420841"
+        },
+        {
+          "file": "libs/components/postcss.config.js",
+          "hash": "2759402739052110475"
+        },
+        {
+          "file": "libs/components/project.json",
+          "hash": "15426986415644175024"
+        },
+        {
+          "file": "libs/components/src/index.ts",
+          "hash": "14780008786656096668"
+        },
+        {
+          "file": "libs/components/src/lib/LogoutLanding.tsx",
+          "hash": "774772884419355908"
+        },
+        {
+          "file": "libs/components/src/lib/PleaseLogin.tsx",
+          "hash": "1091696258072396722",
+          "deps": [
+            "npm:react-oidc-context"
+          ]
+        },
+        {
+          "file": "libs/components/src/lib/contexts/AuthContext.ts",
+          "hash": "3164318307845065663",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "libs/components/src/lib/home/Authenticated.tsx",
+          "hash": "12033274775376527301",
+          "deps": [
+            "npm:react-oidc-context",
+            "npm:react-helmet",
+            "npm:react-router-dom",
+            "npm:react",
+            "npm:@heroicons/react",
+            "npm:axios"
+          ]
+        },
+        {
+          "file": "libs/components/src/lib/home/AuthenticatedContent.tsx",
+          "hash": "2635867851306801208",
+          "deps": [
+            "npm:react-oidc-context",
+            "npm:react-router-dom"
+          ]
+        },
+        {
+          "file": "libs/components/src/lib/home/CurrentUserContext.ts",
+          "hash": "18234372700184246352",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "libs/components/src/lib/home/DashboardContainer.tsx",
+          "hash": "5691565592202779366",
+          "deps": [
+            "npm:react-oidc-context"
+          ]
+        },
+        {
+          "file": "libs/components/src/lib/home/DropdownMenu.tsx",
+          "hash": "10545761336975546361",
+          "deps": [
+            "npm:react-oidc-context"
+          ]
+        },
+        {
+          "file": "libs/components/src/lib/home/Unauthenticated.tsx",
+          "hash": "12130583490843439097",
+          "deps": [
+            "npm:react-router-dom"
+          ]
+        },
+        {
+          "file": "libs/components/src/lib/home/ZitadelAccessError.ts",
+          "hash": "18131737753209018466"
+        },
+        {
+          "file": "libs/components/src/lib/home/app.tsx",
+          "hash": "670645344510672672",
+          "deps": [
+            "npm:react-helmet",
+            "npm:react-oidc-context",
+            "npm:react-router-dom"
+          ]
+        },
+        {
+          "file": "libs/components/src/lib/home/auth-component.tsx",
+          "hash": "14448441498704758887",
+          "deps": [
+            "npm:react",
+            "npm:react-oidc-context"
+          ]
+        },
+        {
+          "file": "libs/components/src/lib/home/meta-app.tsx",
+          "hash": "3818247135024464183",
+          "deps": [
+            "npm:react-oidc-context",
+            "npm:react"
+          ]
+        },
+        {
+          "file": "libs/components/src/lib/home/navbar.tsx",
+          "hash": "9135063734168414004"
+        },
+        {
+          "file": "libs/components/src/lib/home/useUserinfo.tsx",
+          "hash": "8191016944418118324",
+          "deps": [
+            "npm:react",
+            "npm:axios",
+            "npm:react-oidc-context"
+          ]
+        },
+        {
+          "file": "libs/components/src/lib/home/user-dropdown.tsx",
+          "hash": "3935972587483159354",
+          "deps": [
+            "npm:react",
+            "npm:react-oidc-context"
+          ]
+        },
+        {
+          "file": "libs/components/src/lib/hooks/useAxios.ts",
+          "hash": "1984054990318460254",
+          "deps": [
+            "npm:axios",
+            "npm:react-oidc-context"
+          ]
+        },
+        {
+          "file": "libs/components/src/lib/images/logo.png",
+          "hash": "1317117177587188230"
+        },
+        {
+          "file": "libs/components/src/lib/public/footer.tsx",
+          "hash": "5008055847225590728"
+        },
+        {
+          "file": "libs/components/src/lib/public/landing.tsx",
+          "hash": "67088426900318803",
+          "deps": [
+            "npm:react-oidc-context"
+          ]
+        },
+        {
+          "file": "libs/components/src/lib/utils/PropsWithClassName.ts",
+          "hash": "1970160658573888899"
+        },
+        {
+          "file": "libs/components/src/lib/utils/loading.tsx",
+          "hash": "5314775011178013083"
+        },
+        {
+          "file": "libs/components/src/styles.css",
+          "hash": "2866083945719690482"
+        },
+        {
+          "file": "libs/components/tailwind.config.js",
+          "hash": "1655935955068609004",
+          "deps": [
+            "npm:@nx/react",
+            "npm:daisyui"
+          ]
+        },
+        {
+          "file": "libs/components/tsconfig.json",
+          "hash": "14429231888157584408"
+        },
+        {
+          "file": "libs/components/tsconfig.lib.json",
+          "hash": "14238783359340864465"
+        },
+        {
+          "file": "libs/components/tsconfig.spec.json",
+          "hash": "8810446248878120612"
+        },
+        {
+          "file": "libs/components/tsconfig.storybook.json",
+          "hash": "11100585735055789518"
+        }
+      ]
+    }
+  }
+}
