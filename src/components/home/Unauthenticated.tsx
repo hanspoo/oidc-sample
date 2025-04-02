@@ -3,7 +3,9 @@ import { useAuth } from 'react-oidc-context';
 export function Unauthenticated() {
   const auth = useAuth();
 
-  console.log('isLoading ' + auth.isLoading + ' error ' + auth.error);
+  const error = auth.error || 'Error no mapeado';
+
+  console.log('isLoading ' + auth.isLoading + ' error ' + error);
 
   if (auth.isLoading) return null;
 
@@ -12,8 +14,7 @@ export function Unauthenticated() {
       <div className="hero-content text-center">
         <div className="max-w-md">
           <h1 className="text-3xl font-bold">Login to the system</h1>
-
-          {auth.error ? <ErrorUI /> : <LoginUI />}
+          {error ? <ErrorUI /> : <LoginUI />}
         </div>
       </div>
     </div>
