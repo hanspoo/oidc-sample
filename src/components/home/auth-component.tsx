@@ -1,15 +1,15 @@
 // src/App.jsx
 
-import { useAuth } from "react-oidc-context";
-import { UserDropdown } from "./user-dropdown";
+import { useAuth } from 'react-oidc-context';
+import { UserDropdown } from './user-dropdown';
 
 export function AuthComponent() {
   const auth = useAuth();
 
   switch (auth.activeNavigator) {
-    case "signinSilent":
+    case 'signinSilent':
       return <div>Signing you in...</div>;
-    case "signoutRedirect":
+    case 'signoutRedirect':
       return <div>Signing you out...</div>;
   }
 

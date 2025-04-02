@@ -1,4 +1,4 @@
-import { DropdownMenu } from "./DropdownMenu";
+import { DropdownMenu } from './DropdownMenu';
 
 export function UserDropdown() {
   return (

@@ -1,9 +1,9 @@
-import { useAuth } from "react-oidc-context";
-import { Navbar } from "./navbar";
+import { useAuth } from 'react-oidc-context';
+import { Navbar } from './navbar';
 
-import { Authenticated } from "./Authenticated";
-import { Unauthenticated } from "./Unauthenticated";
-import { Footer } from "../public/footer";
+import { Authenticated } from './Authenticated';
+import { Unauthenticated } from './Unauthenticated';
+import { Footer } from '../public/footer';
 
 export function App() {
   const auth = useAuth();

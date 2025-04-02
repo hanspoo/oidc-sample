@@ -1,7 +1,7 @@
-import { useAuth } from "react-oidc-context";
-import { Routes, Route } from "react-router-dom";
-import { PleaseLogin } from "../PleaseLogin";
-import { DashboardContainer } from "./DashboardContainer";
+import { useAuth } from 'react-oidc-context';
+import { Routes, Route } from 'react-router-dom';
+import { PleaseLogin } from '../PleaseLogin';
+import { DashboardContainer } from './DashboardContainer';
 
 export function AuthenticatedContent() {
   const auth = useAuth();
