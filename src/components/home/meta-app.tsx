@@ -1,23 +1,23 @@
-import { AuthProvider } from "react-oidc-context";
+import { AuthProvider } from 'react-oidc-context';
 
-import { App } from "./app";
-import { Centered } from "./Centered";
+import { App } from './app';
+import { Centered } from './Centered';
 
 const base =
   window.location.protocol +
-  "//" +
+  '//' +
   window.location.host +
-  "/" +
+  '/' +
   import.meta.env.VITE_HTTP_PREFIX;
 
 const newURL =
   window.location.protocol +
-  "//" +
+  '//' +
   window.location.host +
   window.location.pathname;
 
 export function MetaApp() {
-  const scope = "openid email profile ";
+  const scope = 'openid email profile ';
 
   const VITE_AUTHORITY = import.meta.env.VITE_AUTHORITY;
   const VITE_CLIENT_ID = import.meta.env.VITE_CLIENT_ID;

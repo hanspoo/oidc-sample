@@ -1,8 +1,8 @@
-import { useAuth } from "react-oidc-context";
+import { useAuth } from 'react-oidc-context';
 
 export function DropdownMenu() {
   const auth = useAuth();
-  const email = auth.user?.profile.email || "invalid@user.org";
+  const email = auth.user?.profile.email || 'invalid@user.org';
 
   return (
     <div className="dropdown dropdown-end cursor-pointer md:mr-2">
@@ -19,8 +19,8 @@ export function DropdownMenu() {
 }
 export function UserDropdownContent() {
   const auth = useAuth();
-  const email = auth.user?.profile.email || "invalid@user.org";
-  const name = auth.user?.profile.name || "Invalid User";
+  const email = auth.user?.profile.email || 'invalid@user.org';
+  const name = auth.user?.profile.name || 'Invalid User';
 
   return (
     <div

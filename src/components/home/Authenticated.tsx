@@ -1,13 +1,13 @@
-import { useAuth } from "react-oidc-context";
-import { useRef } from "react";
+import { useAuth } from 'react-oidc-context';
+import { useRef } from 'react';
 
-import { Bars4Icon, HomeIcon } from "@heroicons/react/24/solid";
-import { UserDropdown } from "./user-dropdown";
+import { Bars4Icon, HomeIcon } from '@heroicons/react/24/solid';
+import { UserDropdown } from './user-dropdown';
 
-import { AuthenticatedContent } from "./AuthenticatedContent";
-import logo from "../images/logo.png";
+import { AuthenticatedContent } from './AuthenticatedContent';
+import logo from '../images/logo.png';
 
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 export function Authenticated() {
   const auth = useAuth();
@@ -39,7 +39,7 @@ export function Authenticated() {
                 <img alt="Logo" src={logo} className="h-8 mr-2" />
               </a>
               <span className="text-2xl font-light">
-                {import.meta.env.VITE_APP_NAME || "AppName"}
+                {import.meta.env.VITE_APP_NAME || 'AppName'}
               </span>
             </div>
 
@@ -74,7 +74,7 @@ export function Authenticated() {
                 <img alt="Logo" src={logo} className="h-8 mr-0" />
               </a>
               <span className="text-2xl font-light">
-                {import.meta.env.VITE_APP_NAME || "AppName"}
+                {import.meta.env.VITE_APP_NAME || 'AppName'}
               </span>
             </div>
           </li>

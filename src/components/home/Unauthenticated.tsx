@@ -1,9 +1,9 @@
-import { useAuth } from "react-oidc-context";
+import { useAuth } from 'react-oidc-context';
 
 export function Unauthenticated() {
   const auth = useAuth();
 
-  console.log("isLoading " + auth.isLoading + " error " + auth.error);
+  console.log('isLoading ' + auth.isLoading + ' error ' + auth.error);
 
   if (auth.isLoading) return null;
 
@@ -54,8 +54,8 @@ export function LoginUI() {
   return (
     <div>
       <p className="py-6">
-        Click to start a new sessión in{" "}
-        {import.meta.env.VITE_APP_NAME || "AppName"}
+        Click to start a new sessión in{' '}
+        {import.meta.env.VITE_APP_NAME || 'AppName'}
       </p>
       <button
         className="btn btn-primary"
