@@ -24,7 +24,7 @@ export function Authenticated() {
   };
 
   return (
-    <div className="drawer lg:drawer-open p-0 min-h-dvh z-50 ml-2 mt-2">
+    <div className="drawer md:drawer-open p-0 min-h-dvh z-50 ml-2 mt-2">
       <input
         id="my-drawer-2"
         type="checkbox"
