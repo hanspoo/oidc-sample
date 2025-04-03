@@ -32,9 +32,9 @@ export function Authenticated() {
         ref={drawer}
       />
       <div className="drawer-content ">
-        <div className="flex flex-col mr-2 mt-2">
-          <div className="flex items-center ml-2 justify-between">
-            <div className="flex items-center md:opacity-0">
+        <div className="flex flex-col">
+          <div className="flex items-center justify-between  mt-3 ml-3">
+            <div className="flex items-center md:opacity-0 ">
               <a href="/admin" className="text-lg">
                 <img alt="Logo" src={logo} className="h-8 mr-2" />
               </a>
