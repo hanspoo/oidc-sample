@@ -24,7 +24,7 @@ export function Authenticated() {
   };
 
   return (
-    <div className="drawer md:drawer-open p-0 min-h-dvh z-50 ml-2 mt-2">
+    <div className="drawer md:drawer-open p-0 min-h-dvh z-50">
       <input
         id="my-drawer-2"
         type="checkbox"
@@ -64,10 +64,7 @@ export function Authenticated() {
           aria-label="close sidebar"
           className="drawer-overlay "
         ></label>
-        <ul
-          className="menu bg-base-200 text-base-content min-h-full w-64"
-          onClick={closeDrawer}
-        >
+        <ul className="menu bg-primary text-base-300 min-h-full w-64">
           <li>
             <div className="flex items-center mb-4">
               <a href="/admin" className="text-lg">
@@ -78,7 +75,7 @@ export function Authenticated() {
               </span>
             </div>
           </li>
-          <li>
+          <li onClick={closeDrawer}>
             <Link to="/" className="flex">
               <HomeIcon className="h-4" />
               Home
@@ -88,7 +85,7 @@ export function Authenticated() {
           <li>
             <details open>
               <summary>Configuration</summary>
-              <ul>
+              <ul onClick={closeDrawer}>
                 <li>
                   <Link to="/config/the-moon">The Moon</Link>
                 </li>
