@@ -17,6 +17,9 @@ This is a sample starter for a react project:
 
 ## Quick start
 
+Video help:
+`https://youtu.be/NVn1Ewt2t7M`
+
 ```
 git clone https://github.com/hanspoo/oidc-sample
 cd oidc-sample/
