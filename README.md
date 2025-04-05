@@ -18,7 +18,7 @@ This is a sample starter for a react project:
 ## Quick start
 
 Video help:
-`https://youtu.be/NVn1Ewt2t7M`
+`[https://youtu.be/NVn1Ewt2t7M](https://youtu.be/s5olUXBTy-k)`
 
 ```
 git clone https://github.com/hanspoo/oidc-sample
